@@ -1,0 +1,8 @@
+{% extends 'music/base.html' %}
+{% block body %}
+	<form action="" method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		{% include 'music/form-template.html' %}
+		<input type="submit" name="" value="Submit">
+	</form>
+{% endblock %}
